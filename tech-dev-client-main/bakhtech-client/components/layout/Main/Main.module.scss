@@ -1,0 +1,85 @@
+.main {
+  position: relative;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(9, 70, 139, 1) 0%,
+    rgba(30, 132, 246, 1) 100%
+  );
+
+  .item {
+    height: 100vh;
+    .content {
+      h4 {
+        margin-bottom: 2.5rem;
+        font-size: 2.8rem;
+      }
+      h2 {
+        font-size: 6rem;
+        margin-bottom: 2.5rem;
+      }
+      h2,
+      h4 {
+        color: #fff;
+        font-family: "Inter";
+      }
+    }
+    .main-image {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  .fix-shaped-wave {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    img {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+  .fix-shaped {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    opacity: 0.1;
+    height: 100vh;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .main-image {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .item {
+    text-align: center;
+    height: auto !important;
+    .content {
+      padding-top: 12rem;
+      padding-bottom: 6rem;
+      h4 {
+        font-size: 2rem !important;
+      }
+      h2 {
+        font-size: 3.6rem !important;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  .main-image {
+    display: block;
+  }
+}

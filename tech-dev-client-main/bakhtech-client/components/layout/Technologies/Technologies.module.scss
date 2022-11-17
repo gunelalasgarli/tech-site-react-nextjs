@@ -1,0 +1,32 @@
+.technology {
+  padding-top: 7rem;
+  position: relative;
+  z-index: 6;
+  .technologyItem {
+    text-align: center;
+    svg {
+      width: 10rem;
+      height: 10rem;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .technologyItem {
+    text-align: center;
+    svg {
+      width: 13rem !important;
+      height: 13rem !important;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .technologyItem {
+    text-align: center;
+    svg {
+      width: 11rem !important;
+      height: 11rem !important;
+    }
+  }
+}

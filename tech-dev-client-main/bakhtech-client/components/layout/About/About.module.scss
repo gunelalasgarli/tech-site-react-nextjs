@@ -1,0 +1,47 @@
+.about {
+    margin: 5rem 0rem;
+    .info {
+        padding: 2rem;
+        .headText {
+            color: #086AD8;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 2.5rem;
+            display: inline-block;
+            position: relative;
+            padding-left: 4.5rem;
+            font-size: 2rem;
+            &::after {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                content: "";
+                height: 0.2rem;
+                width: 3rem;
+                background: #086AD8;
+                margin-top: -0.1rem;
+            }
+        }
+        .headTitle {
+            color: #0e2b3d;
+            font-weight: 600;
+            margin-bottom: 3.5rem!important;
+            font-size: 3.5rem;
+        }
+        .aboutInner {
+            color: #666666;
+            margin: 0 0 2.5rem;
+            text-transform: none;
+            font-weight: 400;
+            font-size: 1.5rem;
+            font-family: 'Inter', sans-serif;
+        }
+    }
+    .bannerPic {
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

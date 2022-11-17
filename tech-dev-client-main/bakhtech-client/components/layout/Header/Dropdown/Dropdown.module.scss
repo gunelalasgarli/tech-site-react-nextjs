@@ -1,0 +1,30 @@
+.dropdown {
+  display: none;
+  width: 21rem;
+  box-shadow: 0 5px 50px 0 #00000026;
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
+  border-radius: 0.2rem;
+  ul {
+    background-color: #fff;
+    padding-left: 0 !important;
+    li {
+      padding: 0.5rem;
+      &:not(:last-child) {
+        border-bottom: 0.1rem solid #f5f5f5;
+      }
+      a {
+        color: #333333 !important;
+        font-size: 1.3rem;
+      }
+    }
+  }
+  &.dropdown-state {
+    display: block;
+    opacity: 1;
+    transition: opacity 1s ease;
+  }
+}

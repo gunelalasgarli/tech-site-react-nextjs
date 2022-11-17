@@ -1,0 +1,161 @@
+.contacts {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  li {
+    padding: 3rem;
+    margin-bottom: 3rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .contactinfo {
+      margin-top: 5px;
+      p {
+        font-weight: 600;
+        color: #0e2b3d;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        font-size: 1.5rem;
+        text-align: center;
+        span {
+          display: block;
+          font-weight: normal;
+          text-transform: none;
+          color: #666666;
+          font-size: 1.3rem;
+        }
+      }
+    }
+    .icon {
+      font-size: 3rem;
+      height: 6.5rem;
+      width: 6.5rem;
+      text-align: center;
+      line-height: 8rem;
+      background: #ffffff;
+      border-radius: 63% 37% 30% 70% / 50% 45% 55% 50%;
+      color: #086ad8;
+      margin-right: 2rem;
+      box-shadow: 0 5px 30px 0 #d6d7d891;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+  }
+}
+.top {
+  position: relative;
+  background-image: url("https://validthemes.online/themeforest/techa/assets/img/banner/11.jpg");
+  padding: 13rem 0;
+  z-index: 1;
+  margin-bottom: 5rem;
+  background-attachment: fixed !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  padding-top: 205px;
+  &::after {
+    background: #000000 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+  h3 {
+    display: block;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 4rem;
+    margin-top: -1rem;
+    margin-bottom: 0;
+    color: #fff !important;
+  }
+}
+
+.session-form {
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  .form-wrapper {
+    min-width: 50%;
+    .session-modal {
+      h3 {
+        font-size: 2.75rem;
+        font-weight: 500;
+        font-family: "Inter";
+      }
+      p {
+        font-size: 1.8rem;
+        color: #959997;
+      }
+    }
+  }
+  .button {
+    background-color: #086ad8;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 2.5rem 3.5rem;
+    font-weight: 600;
+  }
+  .control {
+    width: 100%;
+    margin-bottom: 2rem;
+    input {
+      width: inherit;
+      border: none;
+      padding: 1.5rem;
+      background: #f0f0f0;
+      outline: none;
+      font-family: "Inter";
+      font-weight: 400;
+      font-size: 1.4rem;
+      border-radius: 0.25rem;
+      &:focus {
+        border: none;
+        color: #495057;
+        background-color: #fff;
+        border-color: #80bdff;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem #007bff40;
+      }
+    }
+  }
+}
+@media screen and(max-width:1400px) {
+  .contacts {
+    width: 100%;
+    padding: 0;
+  }
+
+  .left {
+    width: 100%;
+  }
+}
+
+@media screen and(max-width:568px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    li {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      padding-bottom: 20px;
+    }
+  }
+ 
+  .left {
+    width: 100%;
+  }
+}

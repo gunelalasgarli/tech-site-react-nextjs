@@ -1,0 +1,174 @@
+.services {
+    margin: 12rem 0 9rem 0;
+    position: relative;
+    z-index: 9;
+    .fixedShape {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        overflow: hidden;
+        width: 100%;
+    }
+    .servicesHead {
+        margin-bottom: 10rem;
+        overflow: hidden;
+        margin-top: 5rem;
+        h4 {
+            color: #086AD8;
+            font-weight: 600;
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+        h2 {
+            display: inline-block;
+            font-size: 3.5rem;
+            font-weight: 600;
+            padding-bottom: 2rem;
+            margin-bottom: 0;
+            position: relative;
+            letter-spacing: 0.1rem;
+            line-height: 1.4;
+            &::before {
+                background: #086AD8 none repeat scroll 0 0;
+                bottom: 0;
+                content: "/";
+                height: 0.2rem;
+                left: 50%;
+                margin-left: -2.5rem;
+                position: absolute;
+                width: 40px;
+            }
+            &::after {
+                background: #086AD8 none repeat scroll 0 0;
+                bottom: 0;
+                content: "/";
+                height: 0.2rem;
+                left: 50%;
+                margin-left: 2rem;
+                position: absolute;
+                width: 0.5rem;
+            }
+        }
+    }
+    .servicesBottom {
+        .serviceItem {
+            display: flex;
+            padding: 5rem;
+            height: 25rem;
+            align-items: flex-start;
+            background: #ffffff;
+            box-shadow: 0 0.5rem 3rem 0 rgba(121, 115, 115, 0.292);
+            border-radius: 0.5rem;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            margin-bottom: 3rem;
+            &::after {
+                position: absolute;
+                left: 0;
+                bottom: -100%;
+                content: "";
+                height: 100%;
+                width: 100%;
+                background: linear-gradient(90deg, rgba(4, 45, 92, 1) 0%, rgba(63, 146, 240, 1) 48%);
+                z-index: -1;
+                transition: all 0.35s ease-in-out;
+            }
+            &:hover {
+                &::after {
+                    bottom: 0rem;
+                }
+                .serviceIcon {
+                    color: white;
+                }
+                .serviceInfo {
+                    h4,
+                    p {
+                        color: white;
+                    }
+                }
+            }
+            .serviceIcon {
+                font-size: 5rem;
+                position: relative;
+                z-index: 1;
+                color: #086AD8;
+                transition: all 0.35s ease-in-out;
+                &::after {
+                    position: absolute;
+                    left: -1.5rem;
+                    top: 1rem;
+                    content: "";
+                    height: 5rem;
+                    width: 5rem;
+                    background: #086AD8;
+                    z-index: -1;
+                    border-radius: 50%;
+                    opacity: 0.1;
+                }
+            }
+            .serviceInfo {
+                margin-left: 2rem;
+                h4 {
+                    font-size: 2.5rem;
+                    color: #0e2b3d;
+                    font-weight: bold;
+                    line-height: 1.2;
+                    font-family: 'Inter', sans-serif;
+                    letter-spacing: 0;
+                    margin: 1.3rem 0rem;
+                }
+                p {
+                    transition: all 0.35s ease-in-out;
+                    color: #666666;
+                    margin: 0 0 1.5rem;
+                    text-transform: none;
+                    font-weight: 400;
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .services {
+        .servicesBottom {
+            padding: 0 15px;
+            .serviceItem {
+                flex-wrap: wrap;
+                justify-content: center;
+                height: 30rem;
+                .serviceInfo {
+                    margin-left: 0 !important;
+                    text-align: center;
+                    h4 {
+                        font-size: 2.2rem;
+                    }
+                    p {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .services {
+        .servicesBottom {
+            .serviceItem {
+                padding: 2rem;
+                .serviceInfo {
+                    h4 {
+                        font-size: 2rem;
+                    }
+                    p {
+                        font-size: 1.7rem;
+                    }
+                }
+            }
+        }
+    }
+}
